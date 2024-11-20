@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #336600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+
+.InputTask{
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0,1);
+    transition: box-shadow 0.3s ease;
+    
+}
+
+.InputTask:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#taskList {
+    width: 350px;
+    list-style: none;
+    padding: 0;
+}
+
+#taskLsst li {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:  0 4px 6px rgba(0, 0, 0.1) ;
+    transition: box-shadow 0.3 ease, transform 0.3s ease;
+}
+
+#taskLIst li button {
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3 ease;
+}
+
+#taskList li button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#taskList li button:first-of-type {
+    color: white;
+    background-color: red;
+    margin-left: 10px;
+    transition: background-color 0.3 ease
+}
+
+#taskList li button :first-of-type:hover {
+    background-color: darkred;
+}
+
+#taskList li button:first-of-type {
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+#laskList li button:first-of-type:hover{
+    background-color: #007bff;
+    color: white;
+}
+
+#addTaskButton {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3 ease;
+}
+
+#addTaskButton:hover{
+    background-color: #28a745;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);#LaskList li input[type='checbox']
+}
+
+#taskList li input[type='checbox']{
+    margin-right: 15px;
+    transform: scale(1.5);
+    accent-color: #28a745;
+}
+
+#tasklist li.complated {
+    text-decoration: line-through;
+    color: #888;
+}
